@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Row from './components/row/row.comp'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const Timetable = ({lessons, ...props}) => {
+  return(
+    <div className='timetable-container'>
+      <Row lessons={lessons} title='Po' note='31.2' beginTime={700} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default Timetable

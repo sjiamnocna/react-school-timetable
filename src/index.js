@@ -1,12 +1,89 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Timetable from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Timetable lessons={[
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 700,
+          end: 830
+        },
+        className: 'orange',
+      },
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 800,
+          end: 900
+        },
+        className: 'red grayscale',
+      },
+      {
+        title: 'Long one',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 845,
+          end: 930
+        },
+        className: 'orange grayscale',
+      },
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 950,
+          end: 1035
+        },
+        className: 'red',
+      },
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 950,
+          end: 1035
+        },
+        className: 'yellow grayscale',
+      },
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 950,
+          end: 1035
+        },
+        className: 'green',
+      },
+      {
+        title: 'Subject XYZ',
+        shortcut: 'XYZ',
+        teacher: 'Jan Kašpárek',
+        room: 'A42',
+        time: {
+          begin: 1100,
+          end: 1145
+        },
+        className: 'yellow',
+      },
+    ]} />
   </React.StrictMode>,
   document.getElementById('root')
 );

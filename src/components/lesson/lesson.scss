@@ -1,0 +1,96 @@
+.lesson-item {
+    display: inline-block;
+    position: absolute;
+    .lesson-container {
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 0.05em solid gray;
+        height: 3.9em;
+        background-color: lightgray;
+        p {
+            margin: 4px auto;
+        }
+        div.details {
+            font-size: 70%;
+            color: #555;
+            p.row {
+                display: block;
+                margin: 2px 0;
+                text-align: center;
+                span.room {
+                    padding: 0.3em;
+                }
+                time {
+                    padding: 0.3em;
+                }
+                &.teacher {
+                    padding: 2px 0.5em;
+                    font-size: 85%;
+                }
+            }
+        }
+        abbr {
+            display: block;
+            margin: 5px auto 2px;
+            text-align: center;
+            font-size: 1.1em;
+            color: black;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+    }
+    &.red {
+        .lesson-container {
+            background-color: #ffb7b0;
+            border-color: #ff1700;
+        }
+
+        &.grayscale {
+            .lesson-container {
+                background-color: #cbcbcb;
+                border-color: #5a5a5a;
+            }
+        }
+    }
+    &.orange {
+        .lesson-container {
+            background-color: #ffc885;
+            border-color: #ff8e00;
+        }
+
+        &.grayscale {
+            .lesson-container {
+                background-color: #d1d1d1;
+                border-color: #a0a0a0;
+            }
+        }
+    }
+    &.yellow {
+        .lesson-container {
+            background-color: #fff7b3;
+            border-color: #ffe400;
+        }
+
+        &.grayscale {
+            .lesson-container {
+                background-color: #f1f1f1;
+                border-color: #d3d3d3;
+            }
+        }
+    }
+    &.green {
+        .lesson-container {
+            background-color: #a7ffa6;
+            border-color: #06ff00;
+        }
+
+        &.grayscale {
+            .lesson-container {
+                background-color: #dadada;
+                border-color: #989898;
+            }
+        }
+    }
+}
